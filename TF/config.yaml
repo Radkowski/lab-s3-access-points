@@ -1,0 +1,20 @@
+Parameters:
+
+  DeploymentPrefix: "RadLab"
+
+  EC2KeyName: "<CHANGE_ME>"
+
+  Region: eu-central-1
+  VPCCIDR: "10.0.0.0/16"
+
+  BucketName: "<CHANGE_ME>"
+
+  AdminARN:
+     - "arn:aws:iam::<ACCOUNT_ID>:role/aws-reserved/sso.amazonaws.com/eu-west-1/MySecretAdminRole"
+     - "arn:aws:iam::<ACCOUNT_ID>:role/MySecretTFRole"
+
+  CreateUsers: True
+
+  ExternalUserAccessList:
+    - "arn:aws:iam::<ACCOUNT_ID>:user/RadLab-s3-user-1"
+    - "arn:aws:iam::<ACCOUNT_ID>:user/RadLab-s3-user-2"

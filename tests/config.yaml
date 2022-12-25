@@ -1,0 +1,11 @@
+Config:
+  Profiles:
+   - 'RadLab-s3-user-1' 
+   - 'RadLab-s3-user-2'
+   - 'RadLab-s3-user-3'
+  IncludeLocalCredentials: False
+  s3_bucket: "<BUCKET_NAME>"
+  external_s3_bucket: "insecure-<BUCKET_NAME>"
+  accesspoints:
+    internal: "<INTERNAL_ACCESS_POINT_ALIAS>"
+    external: "<EXTERNAL_ACCESS_POINT_ALIAS>"
